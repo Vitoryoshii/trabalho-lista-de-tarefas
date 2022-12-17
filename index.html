@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6aff1c598c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Lista de Tarefas</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="top">
+        <input
+          type="text"
+          id="inputTaskNew"
+          placeholder="Adicione uma nova tarefa"
+        />
+        <button id="btnAddTask">
+          <i class="fa-regular fa-plus"></i>
+        </button>
+      </div>
+      <ul id="taskList">
+        <li>
+          <span class="taskText">Tarefa 1</span>
+          <div>
+            <button class="btnAction">
+              <i class="fa-solid fa-pen"></i>
+            </button>
+            <button class="btnAction">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="/src/js/logica.js"></script>
+  </body>
+</html>

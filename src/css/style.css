@@ -1,0 +1,89 @@
+body {
+  background: black;
+  color: white;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.conteiner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #2b2a2a;
+  padding: 55px;
+  border-radius: 12px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+#inputTaskNew {
+  width: 400px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #191818;
+  outline: none;
+  font-size: 1.2rem;
+  background: #191818;
+  color: white;
+}
+
+#inputTaskNew:hover {
+  border: 1px solid #8a33e1;
+  cursor: pointer;
+}
+
+#btnAddTask {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  border: 1px solid #191818;
+  background: #191818;
+  color: white;
+  outline: none;
+}
+
+#btnAddTask:hover {
+  background: #8a33e1;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#taskList li {
+  padding: 20px;
+  background: #191818;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnAction {
+  border-radius: 20px;
+  border: 1px solid #191818;
+  height: 38px;
+  width: 38px;
+  margin-right: 8px;
+  cursor: pointer;
+  background: #2b2a2a;
+  color: white;
+}
+
+.btnAction:hover {
+  background: #8a33e1;
+  border: 2px solid #000;
+  cursor: pointer;
+  color: #fff;
+}
