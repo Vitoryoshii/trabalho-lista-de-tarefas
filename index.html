@@ -23,20 +23,26 @@
           <i class="fa-regular fa-plus"></i>
         </button>
       </div>
-      <ul id="taskList">
-        <li>
-          <span class="taskText">Tarefa 1</span>
-          <div>
-            <button class="btnAction">
-              <i class="fa-solid fa-pen"></i>
-            </button>
-            <button class="btnAction">
-              <i class="fa-solid fa-trash"></i>
-            </button>
-          </div>
-        </li>
-      </ul>
+      <ul id="taskList"></ul>
     </div>
+
+    <div id="editWindon">
+      <button id="btnWindonEditClose">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h2 id="editTaskID">#1021</h2>
+      <hr />
+      <form action="">
+        <div class="frm-line">
+          <label for="nome">Nome</label>
+          <input type="text" id="inputTaskEditName" />
+        </div>
+        <div class="frm-line">
+          <button id="btnTaskUpdate">Salvar</button>
+        </div>
+      </form>
+    </div>
+    <div id="WindonEditBackgroud"></div>
     <script src="/src/js/logica.js"></script>
   </body>
 </html>

@@ -51,7 +51,7 @@ body {
 
 #btnAddTask:hover {
   background: #8a33e1;
-  border: 2px solid #000;
+  border: 1px solid #000;
   cursor: pointer;
 }
 
@@ -68,6 +68,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 25px;
 }
 
 .btnAction {
@@ -79,11 +80,115 @@ body {
   cursor: pointer;
   background: #2b2a2a;
   color: white;
+  outline: none;
+}
+
+.textTask {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 290px;
+  white-space: nowrap;
 }
 
 .btnAction:hover {
   background: #8a33e1;
-  border: 2px solid #000;
+  border: 1px solid #000;
   cursor: pointer;
   color: #fff;
+}
+
+#editWindon {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #191818;
+  border: 1px solid #8a33e1;
+  width: 415px;
+  border-radius: 12px;
+  z-index: 200;
+  display: none;
+}
+
+#editWindon.open {
+  display: block !important;
+}
+
+#WindonEditBackgroud {
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: 100;
+  right: 0;
+  display: none;
+}
+
+#WindonEditBackgroud.open {
+  display: block !important;
+}
+
+#btnWindonEditClose {
+  position: absolute;
+  top: -25px;
+  right: -20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #8a33e1;
+  background: #2d2c2c;
+  color: white;
+  outline: none;
+}
+
+#btnWindonEditClose:hover {
+  background: #8a33e1;
+  cursor: pointer;
+  transition: 2s;
+}
+
+form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.frm-line {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.frm-line label {
+  margin-bottom: 7px;
+}
+
+.frm-line input {
+  padding: 15px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid #8a33e1e2;
+  background: #2d2c2c;
+  color: white;
+}
+
+.frm-line button {
+  background: #2d2c2c;
+  border: 1px solid #8a33e1;
+  padding: 7px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  color: #ccc;
+  height: 50px;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.frm-line button:hover {
+  background: #8a33e1;
+  color: #fff;
+  cursor: pointer;
+  transition: 1.5s;
 }
